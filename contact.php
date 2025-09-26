@@ -7,7 +7,7 @@ include __DIR__ . '/includes/header.php';
 <p>Заполните форму, и мы ответим вам в ближайшее время.</p>
 
 <?php if ($success): ?>
-  <div class="alert alert-success">Спасибо! Ваше сообщение успешно отправлено.</div>
+  <div class="alert alert-success">Большое спасибо! Ваше сообщение успешно отправлено.</div>
 <?php endif; ?>
 
 <form id="contactForm" action="/process_contact.php" method="post" novalidate>
