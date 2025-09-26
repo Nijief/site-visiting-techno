@@ -1,7 +1,4 @@
 <?php
-// process_contact.php
-// Простая серверная обработка формы: сохраняем в CSV и перенаправляем с флагом успеха.
-// Защита: basic sanitization.
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: /contact.php');
@@ -13,12 +10,10 @@ $email = trim($_POST['email'] ?? '');
 $message = trim($_POST['message'] ?? '');
 
 if ($name === '' || $email === '' || $message === '') {
-    // можно передавать параметры ошибки, но для простоты — редирект обратно
     header('Location: /contact.php');
     exit;
 }
 
-// sanitize
 $name_safe = htmlspecialchars($name, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $email_safe = filter_var($email, FILTER_SANITIZE_EMAIL);
 $message_safe = htmlspecialchars($message, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
@@ -40,6 +35,5 @@ if ($fp) {
     fclose($fp);
 }
 
-// Редирект на страницу контактов с флагом успеха
 header('Location: /contact.php?sent=1');
 exit;

@@ -1,5 +1,4 @@
 <?php
-// includes/header.php
 ?>
 <!doctype html>
 <html lang="ru">
@@ -22,6 +21,7 @@
         <li class="nav-item"><a class="nav-link" href="/index.php">Главная</a></li>
         <li class="nav-item"><a class="nav-link" href="/about.php">О компании</a></li>
         <li class="nav-item"><a class="nav-link" href="/contact.php">Контакты</a></li>
+        <li class="nav-item"><a class="nav-link" href="/admin.php">Администратор</a></li>
       </ul>
     </div>
   </div>

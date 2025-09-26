@@ -7,7 +7,7 @@ include __DIR__ . '/includes/header.php';
   <p class="lead">Мы разрабатываем современные IT-решения для бизнеса и образования.</p>
   <p>
     <a class="btn btn-light text-primary me-2" href="/about.php">Подробнее о нас</a>
-    <a class="btn btn-outline-light" href="/contact.php">Связаться</a>
+    <a class="btn btn-light text-primary me-2" href="/contact.php">Связаться</a>
   </p>
 </section>
 
